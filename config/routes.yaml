@@ -1,0 +1,23 @@
+# Publicly user registration route
+register:
+  path: /register
+  controller: App\Controller\UserController::new
+  methods: POST
+
+# Publicly accessible posts route
+post:
+  path: /post
+  controller: App\Controller\PostController::index
+  methods: GET
+
+# Publicly portable comment route
+feedback:
+  path: /feedback
+  controller: App\Controller\FeedbackController::new
+  methods: POST
+
+# Publicly accessible comment route
+feedback_list:
+  path: /feedback/list
+  controller: App\Controller\FeedbackController::index
+  methods: GET
