@@ -170,12 +170,12 @@ class UserTest extends TestCase
     }
 
     /**
-     * @param $username
-     * @param $password
+     * @param string $username
+     * @param string $password
      * @return mixed
      * @throws GuzzleException
      */
-    private function getToken($username='mubasher693', $password='123456'){
+    private function getToken(string $username='mubasher693', string $password='123456'){
         $response = $this->http->request('POST', 'api/login_check', [
             'json' => [
                 'username' => $username,
