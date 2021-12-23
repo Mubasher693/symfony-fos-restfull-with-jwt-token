@@ -10,6 +10,7 @@ This projects requires
 - Symfony 5.3
 - Sqlite3
 - FosRest & LexikJWTAuthentication Bundle.
+- Postman or any other API testing tool.
 
 Installation
 ------------
@@ -21,9 +22,12 @@ Installation
 ``` bash
 $ php bin/console lexik:jwt:generate-keypair
 ```
-- Once all the dependencies are installed, now time to create database and run migrations.
+- Once all the dependencies are installed, now time to create database and run migrations, The database will be created inside `your-project-root/var/data.db`.
 ``` bash
 $ php bin/console doctrine:database:create
 $ php bin/console doctrine:migrations:migrate
 ```
-the database will be created inside `your-project-root/var/data.db`.
+
+- For API Collection use the following link to view complete documentation.
+  - [Postman](https://documenter.getpostman.com/view/12789973/UVRDFR2n)
+  - [Swagger](https://app.swaggerhub.com/apis/Mubasher693/clipr-api/1.0.0)

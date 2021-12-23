@@ -18,6 +18,6 @@ feedback:
 
 # Publicly accessible comment route
 feedback_list:
-  path: /feedback/list
+  path: /feedback/list/{id}
   controller: App\Controller\FeedbackController::index
   methods: GET
